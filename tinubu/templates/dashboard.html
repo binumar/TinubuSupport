@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+</head>
+<body>
+  <center>
+    <a href="{% url 'home' %}">home</a>
+    <h1>Dashboard</h1>
+    <div>
+      <h3>Total Groups: {{total}}</h3>
+    </div>
+   
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Address</th>
+        <th>Actions</th>
+      </tr>
+      {% for group in support_groups %}
+      <tr>
+        <td>{{group.full_name}}</td>
+        <td>{{group.phone}}</td>
+        <td>{{group.home_address}}</td>
+        <td><span><a href="{% url 'support_group_detail' group.id %}">view</a></span>
+            <span><a href="{% url 'update_support_group' group.id %}">update</a></span>
+            <span><a href="{% url 'delete_support_group' group.id %}">delete</a></span>
+        </td>
+      </tr>
+      {% endfor %}
+    </table>
+  </center>
+</body>
+</html>
+

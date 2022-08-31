@@ -1,0 +1,557 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="{% static 'img/favicon.png' %}" type="image/png">
+	<title>dikko Support Group</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+	<link rel="stylesheet" href="{% static 'vendors/linericon/style.css' %}">
+	<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+	<link rel="stylesheet" href="{% static 'vendors/owl-carousel/owl.carousel.min.css' %}">
+	<link rel="stylesheet" href="{% static 'vendors/lightbox/simpleLightbox.css' %}">
+	<link rel="stylesheet" href="{% static 'vendors/nice-select/css/nice-select.css' %}">
+	<link rel="stylesheet" href="{% static 'vendors/animate-css/animate.css' %}">
+	<!-- main css -->
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+	<!--================ Start Header Menu Area =================-->
+	<header class="header_area">
+		<div class="header-top">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-6 col-sm-6 col-4 header-top-left">
+						<a href="tel:+9530123654896">
+							<span class="lnr lnr-phone"></span>
+							<span class="text">
+								<span class="text">+953012 3654 896</span>
+							</span>
+						</a>
+						<a href="mailto:support@colorlib.com">
+							<span class="lnr lnr-envelope"></span>
+							<span class="text">
+								<span class="text">dikkoumarraddasupportgroup@gmail.com</span>
+							</span>
+						</a>
+					</div>
+					<div class="col-lg-6 col-sm-6 col-8 header-top-right">
+						<a href="{% url 'create_user' %}" class="text-uppercase">Register</a>
+						<a href="{% url 'login' %}" class="text-uppercase">Login</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="main_menu">
+			<div class="search_input" id="search_input_box">
+				<div class="container">
+					<form class="d-flex justify-content-between" method="" action="">
+						<input type="text" class="form-control" id="search_input" placeholder="Search Here">
+						<button type="submit" class="btn"></button>
+						<span class="lnr lnr-cross" id="close_search" title="Close Search"></span>
+					</form>
+				</div>
+			</div>
+
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<h1>D.U.R.S.G.F</h1>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav ml-auto">
+							<li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+							<!-- <li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								 aria-expanded="false">Support Groups</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="registeration/register.html">Support Group Registeration</a></li>
+									<li class="nav-item"><a class="nav-link" href="course-details.html">Edit My Support Group</a></li>
+									<li class="nav-item"><a class="nav-link" href="elements.html">My Profile</a></li>
+								</ul>
+							</li> -->
+
+							<li class="nav-item"><a class="nav-link" href="{% url 'our_team' %}">Our Team</a></li>
+					
+							<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+							<li class="nav-item"><a class="nav-link" href="{% url 'create_user' %}">register</a></li>
+							<li class="nav-item">
+								<a href="#" class="nav-link search" id="search">
+									<i class="lnr lnr-magnifier"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================ End Header Menu Area =================-->
+
+	<!--================ Start Home Banner Area =================-->
+	<section class="home_banner_area">
+		<div class="banner_inner">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="banner_content">
+							<h2 style="font-size: 30px;">
+								Dr. Dikko  Umar Radda Support Groups forum
+								Katsina State
+							</h2>
+							<p>
+								Dr. Dikko Umar Radda Support Group Forum was established to provide effective and efficient coordination of alla voluntary support Groups:
+								from within the civic space and digital media that are involved in grassroots mobilization, and amplifying activities of Gwagware.
+								The forum also server as an interactive platform for interest groups, and like mind with members from all nooks and cronies of katsina State and diaspora.
+								with the declaration of Dr. Dikko umar radda to vie for the office of the Governoship of katsina race, the Dikko Umar Radda Supprot group Forum, with the 
+								head office katsina state and Dutsinma Local Government has kicked off operations towards mobilizing more like minded voluntary support Group That are supporting his candidacy,
+								with more groups joining the movement on daily basis. The dikko Radda Support Group forum has strategized developed, and is providing comprehensive real time online
+								and offline activities of the members groups boosting state awareness and promoting gwagware's Governorship Campaing for the 2023 election.
+								the Dikko Umar Radda Support Group Forum has seen an increase in state support and engagement as a result of approach.
+							</p>
+							<div class="search_course_wrap">
+								<form action="" class="form_box d-flex justify-content-between w-100">
+									<input type="text" placeholder="Search Groups" class="form-control" name="username" onfocus="this.placeholder = ''"
+									 onblur="this.placeholder = 'Search Groups'">
+									<button type="submit" class="btn search_course_btn">Search</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- <h1>home</h1>
+    <h1>welcom "{{request.user}}"</h1>
+    <a href="{% url 'admin_dashboard' %}">admin dashboard</a><br>
+    <a href="{% url 'group_dashboard' %}">group dashboard</a><br>
+    <a href="{% url 'create_support_group' %}">register support group</a><br>
+    <a href="{% url 'logout' %}">logout</a><br> -->
+	<!--================ End Home Banner Area =================-->
+
+	<!--================ Start Feature Area =================-->
+
+	<!--================ End Feature Area =================-->
+
+	<!--================ Start Department Area =================-->
+	<div class="department_area section_gap">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-6">
+					<div class="dpmt_courses">
+						<div class="row">
+							<!-- single course -->
+							<div class="col-lg-4 col-md-4 col-sm-6 col-12 text-center mt-100">
+								<div class="single_department">
+									<div class="dpmt_icon">
+										<img src="{% static 'img/dpmt/icon1.png' %}" alt="">
+									</div>
+									<h4>Scholars</h4>
+								</div>
+							</div>
+							<!-- single course -->
+							<div class="col-lg-4 col-md-4 col-sm-6 col-12 text-center">
+								<div class="single_department">
+									<div class="dpmt_icon">
+										<img src="{% static 'img/dpmt/icon2.png' %}" alt="">
+									</div>
+									<h4>Business</h4>
+								</div>
+							</div>
+							<!-- single course -->
+							<div class="col-lg-4 col-md-4 col-sm-6 col-12 text-center mt-100">
+								<div class="single_department">
+									<div class="dpmt_icon">
+										<img src="{% static 'img/dpmt/icon3.png' %}" alt="">
+									</div>
+									<h4>Students</h4>
+								</div>
+							</div>
+							<!-- single course -->
+							<div class="col-lg-4 col-md-4 col-sm-6 col-12 text-center">
+								<div class="single_department">
+									<div class="dpmt_icon">
+										<img src="{% static 'img/dpmt/icon4.png' %}" alt="">
+									</div>
+									<h4>N.G.O's/private</h4>
+								</div>
+							</div>
+							<!-- single course -->
+							<div class="col-lg-4 col-md-4 col-sm-6 col-12 text-center mt--100">
+								<div class="single_department">
+									<div class="dpmt_icon">
+										<img src="{% static 'img/dpmt/icon5.png' %}" alt="">
+									</div>
+									<h4>Community</h4>
+								</div>
+							</div>
+							<!-- single course -->
+							<div class="col-lg-4 col-md-4 col-sm-6 col-12 text-center">
+								<div class="single_department">
+									<div class="dpmt_icon">
+										<img src="{% static 'img/dpmt/icon6.png' %}" alt="">
+									</div>
+									<h4>Farmers</h4>
+								</div>
+							</div>
+							<!-- single course -->
+							<div class="offset-lg-4 col-lg-4 col-md-4 col-sm-6 col-12 text-center mt--100">
+								<div class="single_department">
+									<div class="dpmt_icon">
+										<img src="{% static 'img/dpmt/icon7.png' %}" alt="">
+									</div>
+									<h4>Enterprenures</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="offset-lg-1 col-lg-5">
+					<div class="dpmt_right">
+						<h1>Over 100 Dikko Support Groups from 34 Local government</h1>
+						<a href="#" class="primary-btn text-uppercase">Explore Groups</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--================ End Department Area =================-->
+
+	<!--================ Start Popular Courses Area =================-->
+	<div class="popular_courses lite_bg">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-6">
+					<div class="main_title">
+						<h2>MANAGEMENT TEAM</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<!-- single course -->
+				<div class="col-lg-3 col-md-6">
+					<div class="single_course">
+						<div class="course_head overlay">
+							<img class="img-fluid w-100" src="{% static 'gallery/a.jpg' %}" alt="">
+						</div>
+						<div class="course_content">
+							<h4>
+								<a href="course-details.html"> <span class="name">Mrs. Aisha Amadu</a>
+							</h4>
+							<p>Grand matron I</p>
+							<div class="course_meta d-flex justify-content-between">
+								<div>
+									<span class="price">view</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="single_course">
+						<div class="course_head overlay">
+							<img class="img-fluid w-100" src="{% static 'gallery/tinubu1.jpg' %}" alt="">
+						</div>
+						<div class="course_content">
+							<h4>
+								<a href="course-details.html"> <span class="name">HON. ABUBAKAR MATI DUTSINMA</a>
+							</h4>
+							<p>Director General</p>
+							<div class="course_meta d-flex justify-content-between">
+								<div>
+									<span class="price">view</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="single_course">
+						<div class="course_head overlay">
+							<img class="img-fluid w-100" src="{% static 'gallery/b.jpg' %}" alt="">
+						</div>
+						<div class="course_content">
+							<h4>
+								<a href="course-details.html"> <span class="name">MALAM. MUSTAPHA AHMAD MAI BREAD</a>
+							</h4>
+							<p>Director Support Group Services</p>
+							<div class="course_meta d-flex justify-content-between">
+								<div>
+									<span class="price">view</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="single_course">
+						<div class="course_head overlay">
+							<img class="img-fluid w-100" src="{% static 'gallery/c.jpg' %}" alt="">
+						</div>
+						<div class="course_content">
+							<h4>
+								<a href="course-details.html"> <span class="name">SHEIKH ANAS AMINU</a>
+							</h4>
+							<p>Director Digital Media Services</p>
+							<div class="course_meta d-flex justify-content-between">
+								<div>
+									<span class="price">view</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--================ End Popular Courses Area =================-->
+
+	<!--================ Start Fact Area =================-->
+	<div class="fact_area overlay">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-6">
+					<div class="main_title">
+						<h2>Our Services</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<!-- single features -->
+				<div class="col-lg-6 col-md-8">
+					<div class="single_fact">
+						<div class="f_icon">
+							<img src="{% static 'img/f-icons/icon1.png' %}" alt="">
+						</div>
+						<h4>1- DIGITAL MEDIA SERVICES</h4>
+						<p>This is what we post on the Campaing website, whatsapp and telegram groups, blogs, and other social 
+							media platforms such as facebook, instagram, tik tok, youtube e.t.c. Peoples's daily interactions and communication have changed 
+							as a result of rising use of social media and internet. the use of marketing principles to engaged voters and stimulate collective
+							participation of political process has become crucial real of politics due to competition the use of the internet and social media
+							for political campaigning and involvement has unshared a new paradigm that provide new avenues for political participation and engagement.
+						</p>
+					</div>
+				</div>
+				<!-- single features -->
+				<div class="col-lg-6 col-md-8">
+					<div class="single_fact">
+						<div class="f_icon">
+							<img src="{% static 'img/f-icons/icon2.png' %}" alt="">
+						</div>
+						<h4>2- SUPPORT GROUPS SERVICES</h4>
+						<p>This is what Gwagware does, as evidenced by his state appearance and previous initiatives. our Support groups, foot soldiers,
+							consist of volunteer, interest groups from within the civic space, with formal or informal set-up, online and physical presence,
+							irrespective of geograpical location that seeks to influence state perception, political values and strategic campaign of Dr. dikko Umar Radda
+							towards the 2023 election.
+						</p>
+					</div>
+				</div>
+				
+			
+	<!--================ End Fact Area =================-->
+
+	<!--================ Start Testimonial Area =================-->
+	<div class="section_gap testimonial_area">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-10 text-center">
+					<div class="active_testimonial owl-carousel" data-slider-id="1">
+						<!-- single testimonial Dr. Dikko Umar Radda Support Group Forum was established to provide effective and efficient coordination of alla voluntary support Groups: from within the civic space and digital media that are involved in grassroots mobilization, and amplifying activities of Gwagware. The forum also server as an interactive platform for interest groups, and like mind with members from all nooks and cronies of katsina State and diaspora. with the declaration of Dr. Dikko umar radda to vie for the office of the Governoship of katsina race, the Dikko Umar Radda Supprot group Forum, with the head office katsina state and Dutsinma Local Government has kicked off operations towards mobilizing more like minded voluntary support Group That are supporting his candidacy, with more groups joining the movement on daily basis. The dikko Radda Support Group forum has strategized developed, and is providing comprehensive real time online and offline activities of the members groups boosting state awareness and promoting gwagware's Governorship Campaing for the 2023 election. the Dikko Umar Radda Support Group Forum has seen an increase in state support and engagement as a result of approach.-->
+
+					<div class="owl-thumbs d-flex justify-content-center" data-slider-id="1">
+						<div class="owl-thumb-item">
+							<div class="position-relative">
+								<img class="img-fluid" src="{% static 'gallery/dikko3.jpg' %}" alt="">
+							</div>
+							<div class="overlay-grad"></div>
+						</div>
+						<div class="owl-thumb-item">
+							<div class="position-relative">
+								<img class="img-fluid" src="{% static 'gallery/dikko4.jpg' %}" alt="">
+							</div>
+							<div class="overlay-grad"></div>
+						</div>
+						<div class="owl-thumb-item">
+							<div class="position-relative">
+								<img class="img-fluid" src="{% static 'gallery/dikko4.jpeg" alt="">
+							</div>
+							<div class="overlay-grad"></div>
+						</div>
+						<div class="owl-thumb-item">
+							<div class="position-relative">
+								<img class="img-fluid" src="{% static 'gallery/dikko4.jpeg" alt="">
+							</div>
+							<div class="overlay-grad"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--================ End Testimonial Area =================-->
+
+	<!--================ Start Registration Area =================-->
+	<div class="section_gap registration_area">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-7">
+					<div class="row clock_sec clockdiv" id="clockdiv">
+						<div class="col-lg-12">
+							<h1>Days To Election</h1>
+							<p>as we are facing the general election make sure and be ready for the election ensure that you have your P.V.C if not go to the nearest INEC office and register for your PVC</p>
+						</div>
+						<div class="col clockinner1 clockinner">
+							<h1 class="days">150</h1>
+							<span class="smalltext">Days</span>
+						</div>
+						<div class="col clockinner clockinner1">
+							<h1 class="hours">23</h1>
+							<span class="smalltext">Hours</span>
+						</div>
+						<div class="col clockinner clockinner1">
+							<h1 class="minutes">47</h1>
+							<span class="smalltext">Mins</span>
+						</div>
+						<div class="col clockinner clockinner1">
+							<h1 class="seconds">59</h1>
+							<span class="smalltext">Secs</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 offset-lg-1">
+					<div class="register_form">
+						<h3>Contact us</h3>
+						<p>We instantly reply to your messages</p>
+						<form class="form_area" id="myForm" action="mail.html" method="post">
+							<div class="row">
+								<div class="col-lg-12 form_group">
+									<input name="name" placeholder="Your Name" required="" type="text">
+									<input name="name" placeholder="Your Phone Number" required="" type="tel">
+									<input name="email" placeholder="Your Email Address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
+									 required="" type="email">
+									<input name="message" placeholder="Your Message" required="" type="text">
+								</div>
+								<div class="col-lg-12 text-center">
+									<button class="primary-btn">Submit</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--================ End Registration Area =================-->
+
+	<!--================ Start Events Area =================-->
+	<div class="events_area">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-6">
+					<div class="main_title">
+						<h2>Gallery</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="row">
+						<div class="col-lg-12 col-sm-12">
+							<div class="single_event">
+								<div class="row align-items-center">
+									<div class="col-lg-12 col-md-5">
+										<div class="event_thumb">
+											<img src="{% static 'gallery/dikko1.jpg' %}" alt="" width="500px">
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="row">
+						<div class="col-lg-12 col-sm-12">
+							<div class="single_event">
+								<div class="row align-items-center">
+									<div class="col-lg-12 col-md-5">
+										<div class="event_thumb">
+											<img src="{% static 'gallery/dikko2.jpg' %}" alt="" width="500px" height="350px">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--================ End Events Area =================-->
+
+
+	<!--================ Start footer Area  =================-->
+	<footer class="footer-area section_gap">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>SOURCE</h4>
+					<h3>www.dursgforum.com</h3>
+				</div>
+				<div class="col-lg-4 col-md-6 single-footer-widget">
+					
+				</div>
+			</div>
+			<div class="row footer-bottom d-flex justify-content-between">
+				<p class="col-lg-8 col-sm-12 footer-text m-0 text-white">Copyright © 2022 All rights reserved | Dikkosupportgroupforum
+				 <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#">ufytech</a></p>
+				<div class="col-lg-4 col-sm-12 footer-social">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-dribbble"></i></a>
+					<a href="#"><i class="fa fa-behance"></i></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--================ End footer Area  =================-->
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+	<script src="{% static 'js/popper.js' %}"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'js/stellar.js' %}"></script>
+	<script src="{% static 'js/countdown.js' %}"></script>
+	<script src="{% static 'vendors/nice-select/js/jquery.nice-select.min.js' %}"></script>
+	<script src="{% static 'vendors/owl-carousel/owl.carousel.min.js' %}"></script>
+	<script src="{% static 'js/owl-carousel-thumb.min.js' %}"></script>
+	<script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+	<script src="{% static 'vendors/counter-up/jquery.counterup.js' %}"></script>
+	<script src="{% static 'js/mail-script.js' %}"></script>
+	<!--gmaps Js-->
+	<script src="{% static 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+	<script src="{% static 'js/gmaps.min.js' %}"></script>
+	<script src="{% static 'js/theme.js' %}"></script>
+</body>
+
+</html>

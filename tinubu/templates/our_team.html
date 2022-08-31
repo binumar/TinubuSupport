@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<center>
+    <h1>our team</h1>
+    <a href="{% url 'home' %}">home</a>
+    <a href="{% url 'admin_dashboard' %}">admin dashboard</a>
+    <a href="{% url 'group_dashboard' %}">admin dashboard</a>
+    {% for ot in our_team %}
+        <hr>
+        <img src="{{ot.picture.url}}" alt="team member" width="200px">
+        <h4>Name: {{ot.user.username}}</h4>
+        <h4>Rank: {{ot.rank}}</h4>
+        <hr>
+    {% endfor %}
+</center>
+</body>
+</html>
